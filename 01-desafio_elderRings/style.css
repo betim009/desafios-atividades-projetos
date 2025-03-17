@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.aside {
+    background-color: #ededed;
+    height: 600px;
+
+    a {
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+.active {
+    background-color: green !important;
+}
