@@ -1,4 +1,4 @@
-export const armos = [
+export const armors = [
     {
         "id": "17f696e0685l0i0nblzy58h0qvewk",
         "name": "All-knowing Greaves",

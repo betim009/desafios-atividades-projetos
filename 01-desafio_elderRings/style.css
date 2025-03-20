@@ -5,11 +5,17 @@
 .grid {
     display: grid;
     grid-template-columns: 30% 70%;
+    padding-top: 70px;
 }
 
 .aside {
     background-color: #ededed;
-    height: 600px;
+    height: 300px;
+    width: fit-content;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 30px;
 
     a {
         display: block;
@@ -19,9 +25,64 @@
         color: white;
         padding: 10px;
         border-radius: 5px;
+        width: 100px;
     }
 }
 
 .active {
     background-color: green !important;
+}
+
+.titulo {
+    background-color:#ededed;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 100px;
+    background-color:#ededed;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.card {
+    background-color: #ededed;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .items {
+        width: 50%;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .items {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .grid {
+        grid-template-columns: auto;
+    }
 }
