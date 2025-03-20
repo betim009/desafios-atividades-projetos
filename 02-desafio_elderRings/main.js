@@ -17,4 +17,4 @@ window.addEventListener('DOMContentLoaded', () => {
         <td>${element.defence[1].amount}</td>
     </tr>
     `)
-})
+}) mndbhcu
