@@ -1,0 +1,11 @@
+const { hello } = require("../scripts/scripts.js");
+
+describe('Testando a função "hello"', () => {
+    test('Deve retornar a string correta', () => {
+        expect(hello('Alberto')).toBe('hello, Alberto');
+    });
+
+    test('Deve retonar false se enviar um número', () => {
+        expect(hello(5)).toBeFalsy();
+    });
+});

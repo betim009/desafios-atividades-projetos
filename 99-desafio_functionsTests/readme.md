@@ -1,3 +1,19 @@
+
+## Guia para o desafio:
+    Execute: npm install
+
+    Para testar os tests: `npm run test`
+    Para testar um script especifico: `npx jest some.test.js`
+
+
+
+
+
+
+
+
+
+
 npm install --save-dev jest
 
 npm install --save-dev @testing-library/dom
