@@ -6,6 +6,6 @@ describe('Testando a função "hello"', () => {
     });
 
     test('Deve retonar false se enviar um número', () => {
-        expect(hello(5)).toBeFalsy();
+        expect(hello(5)).toBe(false);
     });
 });

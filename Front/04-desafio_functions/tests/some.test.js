@@ -5,9 +5,9 @@ describe('Testando a função "some"', () => {
         expect(some(4, 4)).toBe(8);
     });
     test('Testando a função enviando o primeiro argumento como string', () => {
-        expect(some('4', 4)).toBeFalsy();
+        expect(some('4', 4)).toBe(false);
     });
     test('Testando a função enviando o segundo argumento como string', () => {
-        expect(some(4, '4')).toBeFalsy();
+        expect(some(4, '4')).toBe(false);
     });
 });

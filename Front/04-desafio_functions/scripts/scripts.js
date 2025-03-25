@@ -1,92 +1,53 @@
 function some(n1, n2) {
-    /* 
-    Objetivo: Criar uma função que some dois números, 
-    mas retorne false se qualquer um dos argumentos for uma string.
-
-    🔹Teste com números: some(2, 3) deve retornar 5.
-    🔹Teste com strings: some("2", 3) deve retornar false.
-    🔹Teste com strings: some(2, "3") deve retornar false.
-    */
+    if (typeof n1 === 'string' || typeof n2 === 'string') {
+        return false;
+    };
+    return n1 + n2;
 };
 
 function hello(name) {
-    /*
-    Objetivo: Criar uma função que retorne uma string/texto personalizada, 
-    mas retorne false se o argumento não for uma string.
-
-    🔹Teste com uma string: "Jonh" 
-        hello("John") 
-        
-    🔹Saída esperada:
-        "hello, John".
-
-    🔹Teste com um número: 123
-        hello(123) 
-    
-    🔹Saída esperada:
-        false
-    */
-}
+    if (typeof name !== 'string') {
+        return false;
+    };
+    return `hello, ${name}`;
+};
 
 function totalNum(array) {
-    /*
-    Objetivo: Criar uma função que calcule a soma de todos os números em um array, 
-    mas retorne false se o argumento não for um array.
-
-    🔹Teste com um array de números: 
-        [1, 2, 3]
-    
-    🔹Saída:
-        6
-
-    🔹Teste com um argumento que não é um array:
-        "123" 
-
-    🔹Saída:
-        false.
-    */
-}
+    if (!Array.isArray(array)) {
+        return false
+    };
+    return array.reduce((cur, acc) => cur + acc, 0);
+};
 
 function maxRating(ratings) {
-    /*
-    Você deve implementar a função maxRating, que recebe um array de arrays representando pedidos em um fast food. Cada pedido é um array contendo dois valores:
-  
-    Quantidade do pedido (um número inteiro positivo)
-    Nota do pedido (um número inteiro de 1 a 5)
-    O objetivo é encontrar o pedido com a maior nota. Caso haja mais de um pedido com a mesma nota máxima, deve-se retornar aquele que tem a menor quantidade.
+    let rating = 0, count = 0;
 
-    1 Exemplo de Entrada e Saída
-    🔹 Entrada:
-        [[123, 4], [133, 2], [423, 5], [100, 4]]
+    for (const element of ratings) {
 
-    🔹 Processamento:
-        O pedido com a maior nota é [423, 5], pois tem a maior nota (5).
+        if (element[1] > rating || (element[1] == rating && element[0] > rating)) {
+            rating = element[1];
+            count = element[0];
+        };
+    };
 
-    🔹 Saída esperada:
-        [423, 5]
-
-
-    2 Exemplo:
-    🔹 Entrada:
-        [[123, 5], [133, 2], [99, 5], [100, 4]]
-
-    🔹 Processamento:
-        Os pedidos [123, 5] e [99, 5] possuem a maior nota (5).
-        Entre eles, [99, 5] tem a menor quantidade.
-
-    🔹 Saída esperada:
-        [99, 5]
-    */
-}
+    return count;
+};
 
 function telVerify(tel) {
+    if (tel.length !== 10) return false;
 
+    const ddd = tel.slice(0, 2);
+    const number = tel.slice(2, 10);
+
+    return `(${ddd}) ${number}` 
 }
+
+console.log(telVerify("2799082744"))
+
 
 module.exports = {
     some,
     hello,
     totalNum,
-    maxRating,
-    telVerify
+    maxRating
 }

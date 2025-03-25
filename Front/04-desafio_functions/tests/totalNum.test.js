@@ -6,6 +6,6 @@ describe('Testando a função "totalNum"', () => {
     });
 
     test('Testando a função "3, 2, 2"', () => {
-        expect(totalNum("3, 2, 2")).toBeFalsy();
+        expect(totalNum("3, 2, 2")).toBe(false);
     });
 });
