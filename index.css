@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #ccc;
+    height: 80px;
+}
+
+header {
+   display: flex; 
+   align-items: center;
+}
+
+h2 {
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+main {
+    background-color: rgb(55, 52, 52);
+    height: 800px;
+}
+
+.servidores {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+}
+
+.img-servidor {
+    width: 66px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
