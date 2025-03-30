@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3 - Puma</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/logo.jpg" alt="logo" class="logo">
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="col-tenis">
+                <img src="./assets/tenis1.avif" alt="tenis-1" class="img-100">
+                <img src="./assets/tenis2.avif" alt="tenis-1" class="img-100">
+                <img src="./assets/tenis3.avif" alt="tenis-1" class="img-100">
+                <img src="./assets/tenis4.avif" alt="tenis-1" class="img-100">
+            </div>
+
+            <div class="display">
+                <img src="./assets/tenis1.avif" alt="display-img" class="img-400">
+            </div>
+
+            <div class="div-submit">
+                <h2>Tênis Trinity Masculino</h2>
+                <h4>R$549,99</h4>
+
+                <div class="custom-select">
+                    <select id="size">
+                        <option>36 BR</option>
+                        <option>37 BR</option>
+                        <option>38 BR</option>
+                        <option>39 BR</option>
+                        <option>40 BR</option>
+                        <option>41 BR</option>
+                    </select>
+
+                    <select id="amount">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+
+                <button class="finalizar">Finalizar</button>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script>
+        const imgs = document.querySelectorAll('.img-100');
+        const imgDisplay = document.querySelectorAll('.img-400');
+
+
+        imgs.forEach((img, i) => {
+            img.addEventListener('click', () => {
+                imgDisplay[0].src = `.//assets/tenis${i+1}.avif`
+            })
+        });
+    </script>
+</body>
+
+</html>
