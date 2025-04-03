@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(151, 151, 38);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    font-weight: 500;
+}
+
+main {
+    height: 800px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(151, 151, 38);
+}
