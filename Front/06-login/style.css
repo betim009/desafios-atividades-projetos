@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+}
+
+form {
+    background-color: #ededed;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    input, button {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
