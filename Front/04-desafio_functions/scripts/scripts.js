@@ -105,6 +105,50 @@ function telVerify(tel) {
   */
 }
 
+function verifyMaxNumbers(arr) {
+    /*
+    Objetivo: Criar uma função que receba dois arrays de números e retorne
+    o maior número de cada um deles.
+
+    🔹 Exemplo de entrada:
+        verifyMaxNumbers([[4, 7, 1], [9, 2, 6]])
+
+    🔹 Saída esperada:
+        [7, 9]
+
+    🔹 Requisitos:
+    - A função deve percorrer os dois arrays separadamente
+    - Deve comparar os elementos de cada array e identificar o maior
+    - Retornar os dois maiores valores em um novo array
+    */
+
+};
+
+function verifyPalidromo(str) {
+    /*
+    Objetivo: Criar uma função que verifique se uma palavra é um palíndromo
+    (ou seja, se é igual quando lida de trás pra frente).
+
+    🔹 Exemplo de entrada:
+        verifyPalidromo("arara")
+
+    🔹 Saída esperada:
+        true
+
+    🔹 Outro exemplo:
+        verifyPalidromo("cachorro")
+
+    🔹 Saída esperada:
+        false
+
+    🔹 Requisitos:
+    - A função deve inverter a string original
+    - Comparar a string invertida com a original
+    - Retornar true se forem iguais e false se não forem
+    */
+
+};
+
 module.exports = {
     some,
     hello,
