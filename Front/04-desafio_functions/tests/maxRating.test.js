@@ -1,4 +1,4 @@
-const { maxRating } = require('../scripts/scripts.js')
+const { maxRating } = require('../scripts/script.js')
 
 describe('Testando a função "maxRating"', () => {
     test('Testando a função enviando: [[100, 4], [200, 1], [121, 5], [33, 3]]', () => {

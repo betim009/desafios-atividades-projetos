@@ -1,4 +1,4 @@
-const { totalNum } = require('../scripts/scripts.js')
+const { totalNum } = require('../scripts/script.js')
 
 describe('Testando a função "totalNum"', () => {
     test('Testando a função enviando [3, 2, 2]', () => {

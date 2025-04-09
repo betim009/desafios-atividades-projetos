@@ -1,4 +1,4 @@
-const { some } = require('../scripts/scripts.js')
+const { some } = require('../scripts/script.js')
 
 describe('Testando a função "some"', () => {
     test('Testando a função somando 4 + 4', () => {

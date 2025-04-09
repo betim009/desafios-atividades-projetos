@@ -154,5 +154,7 @@ module.exports = {
     hello,
     totalNum,
     maxRating,
-    telVerify
+    telVerify,
+    verifyMaxNumbers,
+    verifyPalidromo
 }

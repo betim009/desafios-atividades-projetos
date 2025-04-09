@@ -1,4 +1,4 @@
-const { telVerify } = require("../scripts/scripts.js");
+const { telVerify } = require("../scripts/script.js");
 
 describe('Testando a função "telVerify"', () => {
     test('Deve retornar false enviando um número com mais de 10 digitos', () => {
@@ -12,4 +12,4 @@ describe('Testando a função "telVerify"', () => {
     test('Enviando "2799082744" e recebendo "(27) 99082744"', () => {
         expect(telVerify('2799082744')).toBe("(27) 99082744");
     });
-});q
+});

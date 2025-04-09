@@ -1,4 +1,4 @@
-const { hello } = require("../scripts/scripts.js");
+const { hello } = require("../scripts/script.js");
 
 describe('Testando a função "hello"', () => {
     test('Deve retornar a string correta', () => {
