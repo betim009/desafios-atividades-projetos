@@ -1,45 +1,108 @@
 function some(n1, n2) {
-    if (typeof n1 === 'string' || typeof n2 === 'string') {
-        return false;
-    };
-    return n1 + n2;
+    /* 
+    Objetivo: Criar uma função que some dois números, 
+    mas retorne false se qualquer um dos argumentos for uma string.
+
+    🔹Teste com números: some(2, 3) deve retornar 5.
+    🔹Teste com strings: some("2", 3) deve retornar false.
+    🔹Teste com strings: some(2, "3") deve retornar false.
+    */
 };
 
 function hello(name) {
-    if (typeof name !== 'string') {
-        return false;
-    };
-    return `hello, ${name}`;
-};
+    /*
+    Objetivo: Criar uma função que retorne uma string/texto personalizada, 
+    mas retorne false se o argumento não for uma string.
+
+    🔹Teste com uma string: "Jonh" 
+        hello("John") 
+        
+    🔹Saída esperada:
+        "hello, John".
+
+    🔹Teste com um número: 123
+        hello(123) 
+    
+    🔹Saída esperada:
+        false
+    */
+}
 
 function totalNum(array) {
-    if (!Array.isArray(array)) {
-        return false
-    };
-    return array.reduce((cur, acc) => cur + acc, 0);
-};
+    /*
+    Objetivo: Criar uma função que calcule a soma de todos os números em um array, 
+    mas retorne false se o argumento não for um array.
+
+    🔹Teste com um array de números: 
+        [1, 2, 3]
+    
+    🔹Saída:
+        6
+
+    🔹Teste com um argumento que não é um array:
+        "123" 
+
+    🔹Saída:
+        false.
+    */
+}
 
 function maxRating(ratings) {
-    let rating = 0, count = 0;
+    /*
+    Você deve implementar a função maxRating, que recebe um array de arrays representando pedidos em um fast food. Cada pedido é um array contendo dois valores:
+  
+    Quantidade do pedido (um número inteiro positivo)
+    Nota do pedido (um número inteiro de 1 a 5)
+    O objetivo é encontrar o pedido com a maior nota. Caso haja mais de um pedido com a mesma nota máxima, deve-se retornar aquele que tem a menor quantidade.
 
-    for (const element of ratings) {
+    1 Exemplo de Entrada e Saída
+    🔹 Entrada:
+        [[123, 4], [133, 2], [423, 5], [100, 4]]
 
-        if (element[1] > rating || (element[1] == rating && element[0] > rating)) {
-            rating = element[1];
-            count = element[0];
-        };
-    };
+    🔹 Processamento:
+        O pedido com a maior nota é [423, 5], pois tem a maior nota (5).
 
-    return count;
-};
+    🔹 Saída esperada:
+        [423, 5]
+
+
+    2 Exemplo:
+    🔹 Entrada:
+        [[123, 5], [133, 2], [99, 5], [100, 4]]
+
+    🔹 Processamento:
+        Os pedidos [123, 5] e [99, 5] possuem a maior nota (5).
+        Entre eles, [99, 5] tem a menor quantidade.
+
+    🔹 Saída esperada:
+        [99, 5]
+    */
+}
 
 function telVerify(tel) {
-    if (tel.length !== 10) return false;
+    /*
+  Objetivo: Criar uma função que verifique e formate um número de telefone,
+  retornando false se o número for inválido (não tiver 10 dígitos) ou
+  formatando no padrão (DDD) NNNNNNNN se for válido.
 
-    const ddd = tel.slice(0, 2);
-    const number = tel.slice(2, 10);
+  🔹Teste com número válido (10 dígitos):
+      telVerify("1198765432")
+  
+  🔹Saída esperada:
+      "(11) 98765432"
 
-    return `(${ddd}) ${number}`
+  🔹Teste com número inválido (mais de 10 dígitos):
+      telVerify("11987654321")
+  
+  🔹Saída esperada:
+      false
+
+  🔹Teste com número inválido (menos de 10 dígitos):
+      telVerify("11987654")
+  
+  🔹Saída esperada:
+      false
+  */
 }
 
 function verifyMaxNumbers(arr) {
@@ -59,24 +122,6 @@ function verifyMaxNumbers(arr) {
     - Retornar os dois maiores valores em um novo array
     */
 
-    const [arr1, arr2] = arr;
-    let max1 = 0;
-    let max2 = 0;
-
-    arr1.forEach(element => {
-        if (element > max1) {
-            max1 = element;
-        }
-    });
-
-    arr2.forEach(element => {
-        if (element > max2) {
-            max2 = element;
-        }
-    });
-
-    console.log([max1, max2])
-    return [max1, max2];
 };
 
 function verifyPalidromo(str) {
@@ -102,15 +147,6 @@ function verifyPalidromo(str) {
     - Retornar true se forem iguais e false se não forem
     */
 
-    let palidromo = "";
-
-    for (let i = str.length - 1; i >= 0; i--) {
-        const char = str[i];
-        palidromo += char;
-    };
-
-    if (palidromo === str) return true;
-    else return false;
 };
 
 module.exports = {
