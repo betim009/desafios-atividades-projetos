@@ -1,9 +1,0 @@
-Você só deve implementar o arquivo main.js
-
-Existe um array shirts que é um array de objetos. 
-Cada objeto é possui dados de uma camisa aleatória.
-
-Os estilos já foram criados no arquivo style.css.
-Você deve olhar o arquivo e escolher a classe correta.
-
-Você deve criar os elementos com base na imagem layout.img

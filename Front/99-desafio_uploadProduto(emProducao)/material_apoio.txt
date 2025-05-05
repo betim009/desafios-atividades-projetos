@@ -1,2 +1,0 @@
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
-https://programadorviking.com.br/input-files-de-forma-facil-com-html-e-javascript/

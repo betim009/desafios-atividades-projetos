@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 05</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <p>Desafio de cadastro de produtos para o setor de estoque</p>
+    </header>
+
+    <main>
+        <div class="forms">
+            <div class="grid-2 forms-1">
+                <input type="text" placeholder="nome do produto" id="produto">
+                <select name="" id="produto-tipo">
+                    <option value="alimentos">Alimentos</option>
+                    <option value="eletronicos">Eletrônico</option>
+                    <option value="roupas">Roupas</option>
+                    <option value="jogos">Jogos</option>
+                </select>
+            </div>
+
+            <div class="grid-2">
+                <input type="number" min="1" placeholder="quantidade" id="quantidade">
+                <input type="number" min="1" placeholder="preço" id="preco">
+            </div>
+
+            <p>Situação do pagamento:</p>
+            <input type="radio" id="a-vista" name="pagamento" value="a-vista" class="pagamento">
+            <label for="a-vista">à vista</label>
+            <input type="radio" id="parcelado" name="pagamento" value="parcelado" class="pagamento">
+            <label for="parcelado">parcelado</label>
+
+            <span id="alert" hidden></span>
+            <button id="btn-send">CADASTRAR</button>
+        </div>
+    </main>
+
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
